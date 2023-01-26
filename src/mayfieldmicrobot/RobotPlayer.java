@@ -224,8 +224,8 @@ public strictfp class RobotPlayer {
 
         // Also try to move randomly.
         Direction dir = directions[rng.nextInt(directions.length)];
-        if (rc.canMove(dir)) {
-            rc.move(dir);
+        if (rc.canMove(Direction.NORTH)) {
+            rc.move(Direction.NORTH);
         }
     }
 }
